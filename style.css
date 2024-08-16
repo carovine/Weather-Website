@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    font
+}
+
+
+body {
+    background: rgb(16,59,105);
+    background: linear-gradient(90deg, rgba(16,59,105,1) 20%, rgba(63,106,157,1) 47%, rgba(0,212,255,1) 100%);
+}
+
+
+.app{
+    margin: auto;
+    margin-top: 10px;
+    width: 35%;
+    padding:40px 35px;
+    background: rgba(0, 0, 0, 0.183);
+    border-radius: 30px;
+    text-align: center;
+    transform: scale(0.7);
+}
+
+.srch{
+    width: 70%;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.805);
+    font-size: 18px;
+}
+
+.srch-btn{
+    top: 40px;
+    width: 60px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.srch-btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(155, 152, 152);
+}
+
+.wthr-icn{
+    width: 250px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+}
+
+.weather h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.col div{
+    margin-left: 20px;
+    text-align: left;
+    color: white;
+    
+}
+
+.humidity,.wind{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:380px){
+
+  .app{
+    border-radius: 0;
+    margin: 0;
+    width: 96%;
+    padding-right: 40px;
+  }
+
+  .col{
+    margin-left: 0;
+    margin-right: 35px;
+  }
+
+ .col img{
+    width: 50px;
+ }
+
+ .humidity,.wind{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+}
+
+.weather{
+    display: none;
+}
+.error{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.183);
+    font-size: 30px;
+    display: none;
+}
